@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiply - Shipping Results</title>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-100">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Shiply</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-blue-500">About</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="flex flex-col md:flex-row gap-8">
+            <!-- Filters Sidebar -->
+            <aside class="w-full md:w-1/4 bg-white p-4 rounded-md shadow-md">
+                <h3 class="text-xl font-bold mb-4">Filters</h3>
+                
+                <div class="mb-4">
+                    <label class="block text-sm font-medium mb-1">Price Range</label>
+                    <input type="range" class="w-full">
+                    <div class="flex justify-between text-xs text-gray-500">
+                        <span>$0</span>
+                        <span>$500+</span>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-sm font-medium mb-1">Delivery Time</label>
+                    <select class="w-full p-2 border rounded-md">
+                        <option>Any time</option>
+                        <option>1-3 days</option>
+                        <option>3-7 days</option>
+                        <option>1-2 weeks</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium mb-2">Carriers</label>
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <input type="checkbox" class="mr-2">
+                            <span>Carrier 1</span>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" class="mr-2">
+                            <span>Carrier 2</span>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" class="mr-2">
+                            <span>Carrier 3</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Results Section -->
+            <section class="w-full md:w-3/4">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-2xl font-bold">Shipping Results</h2>
+                    <div class="text-sm text-gray-500">Showing 1-3 of 3 results</div>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- Result Card 1 -->
+                    <div class="bg-white p-4 rounded-md shadow-md hover:shadow-lg transition duration-200">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between">
+                            <div class="mb-4 md:mb-0">
+                                <h3 class="text-lg font-semibold">Carrier 1</h3>
+                                <p class="text-gray-600">Standard Shipping</p>
+                                <div class="flex items-center mt-2">
+                                    <span class="text-yellow-400">★★★★☆</span>
+                                    <span class="text-sm text-gray-500 ml-1">(128 reviews)</span>
+                                </div>
+                            </div>
+                            <div class="text-center md:text-right">
+                                <div class="text-2xl font-bold">$89.99</div>
+                                <p class="text-sm text-gray-500">Estimated delivery: 3-5 days</p>
+                                <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-200">
+                                    Select
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Result Card 2 -->
+                    <div class="bg-white p-4 rounded-md shadow-md hover:shadow-lg transition duration-200">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between">
+                            <div class="mb-4 md:mb-0">
+                                <h3 class="text-lg font-semibold">Carrier 2</h3>
+                                <p class="text-gray-600">Express Shipping</p>
+                                <div class="flex items-center mt-2">
+                                    <span class="text-yellow-400">★★★★★</span>
+                                    <span class="text-sm text-gray-500 ml-1">(256 reviews)</span>
+                                </div>
+                            </div>
+                            <div class="text-center md:text-right">
+                                <div class="text-2xl font-bold">$129.99</div>
+                                <p class="text-sm text-gray-500">Estimated delivery: 1-2 days</p>
+                                <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-200">
+                                    Select
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Result Card 3 -->
+                    <div class="bg-white p-4 rounded-md shadow-md hover:shadow-lg transition duration-200">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between">
+                            <div class="mb-4 md:mb-0">
+                                <h3 class="text-lg font-semibold">Carrier 3</h3>
+                                <p class="text-gray-600">Economy Shipping</p>
+                                <div class="flex items-center mt-2">
+                                    <span class="text-yellow-400">★★★☆☆</span>
+                                    <span class="text-sm text-gray-500 ml-1">(64 reviews)</span>
+                                </div>
+                            </div>
+                            <div class="text-center md:text-right">
+                                <div class="text-2xl font-bold">$59.99</div>
+                                <p class="text-sm text-gray-500">Estimated delivery: 5-7 days</p>
+                                <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-200">
+                                    Select
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="mt-8 flex justify-center">
+                    <nav class="flex space-x-2">
+                        <button class="px-3 py-1 rounded-md bg-gray-200 text-gray-700">&laquo;</button>
+                        <button class="px-3 py-1 rounded-md bg-blue-500 text-white">1</button>
+                        <button class="px-3 py-1 rounded-md bg-gray-200 text-gray-700">2</button>
+                        <button class="px-3 py-1 rounded-md bg-gray-200 text-gray-700">3</button>
+                        <button class="px-3 py-1 rounded-md bg-gray-200 text-gray-700">&raquo;</button>
+                    </nav>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-white shadow mt-8">
+        <div class="container mx-auto px-4 py-4 text-center">
+            <p>&copy; 2023 Shiply. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
